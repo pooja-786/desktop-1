@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: rgba(2, 61, 160);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url(../image/png/car-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    /* padding: 15px 30px; */
+    background: rgba(0, 70, 173, 1);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: auto 0;
+    gap: 24px;
+    padding-top: 44px;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    margin: 0 2px;
+}
+
+nav ul li a {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+label[for="search"] {
+    position: relative;
+}
+
+.mag {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    cursor: pointer;
+    right: 80px;
+}
+
+input[type=text] {
+    padding: 8px 14px;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: rgba(0, 70, 173, 1);
+    border-radius: 5px;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.heading {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 83.08px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 50px;
+
+}
+
+.para-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.96px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 20px;
+
+}
+.bg-colour {
+    background-color: rgba(82, 82, 82, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.bg-colour {
+    background-color: rgba(82, 82, 82, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+@media (max-width:992px) {
+
+
+    label[for="list"] {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+        float: right;
+        top: 1%;
+        right: 16px;
+    }
+
+    label[for="list"]>span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        z-index: 2;
+    }
+
+    input#list:checked~.ul-modify {
+        background-color: black;
+        left: 0;
+    }
+
+    input:checked~label[for="list"]>span:nth-child(1) {
+        transform: rotate(64deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="list"]>span:nth-child(2) {
+        transform: rotate(-40deg);
+        opacity: 0;
+
+    }
+
+    input:checked~label[for="list"]>span:nth-child(3) {
+        transform: rotate(-63deg);
+        transform-origin: left;
+    }
+
+
+    .ul-modify {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: all 200ms linear;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: auto 0;
+        gap: 24px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+.heading {
+    font-size: 30px;
+}
+.group-image {
+    width: 279.73PX;
+}
+}
